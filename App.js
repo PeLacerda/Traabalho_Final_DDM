@@ -16,13 +16,29 @@ export default function app(){
       }
   }
   const target= moeda.toUpperCase()
+  const url =  `https://api.frankfurter.app/latest?amount=${v}&from=BRL&to=${target}`;
+
+  
+  try {
+    const resp = await fetch(url);
+    const data = await resp.json();
+ 
+    const valorConvertido = data.rates[moeda];
+
+    if (valorConvertido) {
+      setResultado(`${moeda} ${valorConvertido.toFixed(2)}`);
+      setErro("");
+    } else {
+      setResultado("");
+      setErro("Moeda não suportada");
+    }
+
+  } catch (erro) {
+    setErro("Erro ao acessar a API");
+    setResultado("");
+  }
 
   return(
-   <View style={Estilo.caixa}>
-    <TouchableOpacity style={Estilo.btn} title="Chamar API" onPress={chamarAPI}>
-      <Text>Enviar</Text>
-    </TouchableOpacity>
-    <Text>{JSON.stringify(data)} </Text>
-   </View>
+
   )
 }
