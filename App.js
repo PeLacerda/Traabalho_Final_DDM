@@ -1,8 +1,8 @@
-import { Text,View,TouchableOpacity} from "react-native";
+import { TextInput,Text,View,TouchableOpacity} from "react-native";
 import { useState } from "react";
-import Estilo from "./componentes/estilo"
+import Estilo from "./componentes/estilo";
 
-export default function app(){
+export default function App(){
   const [valor,setValor]= useState("");
   const [result,setResult]=useState("");
   const [erro,setErro]= useState("");
@@ -32,13 +32,14 @@ export default function app(){
       setResultado("");
       setErro("Moeda não suportada");
     }
-
   } catch (erro) {
     setErro("Erro ao acessar a API");
     setResultado("");
   }
 
   return(
-
-  )
+    <View>
+      <Text>Conversor</Text>
+    </View>
+  );
 }
