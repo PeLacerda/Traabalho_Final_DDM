@@ -9,5 +9,22 @@ export default StyleSheet.create({
         width:100,
         height:50,
         backgroundColor:'blue'
+    },
+    escrita:{
+        borderWidth:1, 
+        padding:10, 
+        marginBottom:12, 
+        borderRadius:6,
+    },
+    view:{
+        marginLeft:40,
+        marginTop:40,
+        padding:40,
+        backgroundColor:"green",
+        height:150
+    },
+    botao:{
+        backgroundColor:"blue",
+        color:"white"
     }
 })
