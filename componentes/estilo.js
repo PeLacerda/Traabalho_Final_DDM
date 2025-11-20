@@ -1,0 +1,30 @@
+import { StyleSheet } from "react-native";
+export default StyleSheet.create({
+    caixa:{
+        height:150,
+        width:500,
+        margin:50
+    },
+    btn:{
+        width:100,
+        height:50,
+        backgroundColor:'blue'
+    },
+    escrita:{
+        borderWidth:1, 
+        padding:10, 
+        marginBottom:12, 
+        borderRadius:6,
+    },
+    view:{
+        marginLeft:40,
+        marginTop:40,
+        padding:40,
+        backgroundColor:"green",
+        height:150
+    },
+    botao:{
+        backgroundColor:"blue",
+        color:"white"
+    }
+})
