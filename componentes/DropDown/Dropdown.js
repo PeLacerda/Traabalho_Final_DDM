@@ -26,13 +26,16 @@ const DropdownComponent = ({ moeda, setMoeda }) => {
       labelField="label"
       valueField="value"
       placeholder="Selecione a moeda"
+      containerStyle={{ backgroundColor: '#1A0D2E' }}
+      itemTextStyle={{ color: '#FFFFFF' }}
+      activeColor="#9C27B0"
       searchPlaceholder="Buscar moeda..."
       value={moeda}
       onChange={item => {
         setMoeda(item.value);
       }}
       renderLeftIcon={() => (
-        <AntDesign style={styles.icon} color="black" name="Safety" size={20} />
+        <AntDesign style={styles.icon} color="#FFFFFF" name="Safety" size={20} />
       )}
     />
   );
@@ -42,19 +45,21 @@ export default DropdownComponent;
 
 const styles = StyleSheet.create({
   dropdown: {
-    margin: 16,
     height: 50,
-    borderBottomColor: 'gray',
-    borderBottomWidth: 0.5,
+    borderBottomColor: '#FFFFFF',
+    borderBottomWidth: 1,
+    backgroundColor: 'transparent',
   },
   icon: {
     marginRight: 5,
   },
   placeholderStyle: {
     fontSize: 16,
+    color: '#9E9E9E',
   },
   selectedTextStyle: {
     fontSize: 16,
+    color: '#FFFFFF',
   },
   iconStyle: {
     width: 20,
@@ -63,5 +68,7 @@ const styles = StyleSheet.create({
   inputSearchStyle: {
     height: 40,
     fontSize: 16,
+    color: '#FFFFFF',
+    backgroundColor: '#1A0D2E',
   },
 });
