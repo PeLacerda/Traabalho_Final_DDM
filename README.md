@@ -19,7 +19,7 @@ de câmbio para obter as taxas de conversão em tempo real.
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
-- API de câmbio utilizada ([???](???))
+- [Frankfurter](https://frankfurter.dev/)
 
 ## Autor
 
