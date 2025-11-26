@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 import Estilo from "./componentes/estilo";
 import useApi from "./componentes/API/Api";
 import Dropdown from "./componentes/DropDown/Dropdown";
@@ -9,10 +9,16 @@ export default function App(){
 
     return (
         <View style={Estilo.view}>
-            
+            <View style={Estilo.logoWrapper}>
+                <Image
+                    source={require("./assets/logo_azul.jpg")}
+                    style={[Estilo.logoImage, { marginTop: -80 }]}
+                />
+            </View>
+
             <View style={Estilo.containerPrincipal}>
                 <Text style={Estilo.titulo}>CONVERSOR DE MOEDAS</Text>
-                
+
                 <View style={Estilo.inputContainer}>
                     <Text style={Estilo.inputLabel}>R$ BRL</Text>
                     <TextInput 

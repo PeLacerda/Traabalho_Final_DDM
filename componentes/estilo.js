@@ -1,113 +1,117 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    // Container principal - fundo cinza escuro
+    // estilo da view principal 
     view: {
         flex: 1,
-        backgroundColor: "#2C2C2C", // Cinza escuro
+        backgroundColor: "#010011", 
         padding: 20,
         justifyContent: "center",
         alignItems: "center",
     },
-    // Label "Tela inicial" no topo
-    labelTelaInicial: {
-        color: "#9E9E9E", // Cinza claro
-        fontSize: 12,
-        alignSelf: "flex-start",
-        marginBottom: 10,
-        marginLeft: 10,
+    
+    // estilo da logo
+    logoImage: {
+        width: 180,
+        height: 190,
+        resizeMode: "contain",
     },
-    // Container principal roxo-escuro
+
+    // container principal (card roxo-escuro)
     containerPrincipal: {
-        backgroundColor: "#1A0D2E", // Roxo muito escuro/preta
-        width: "90%",
+        backgroundColor: "#23123dff",
+        width: "70%",
         borderRadius: 20,
         padding: 30,
         alignItems: "center",
-        marginTop: 20,
+        paddingTop: 30,
     },
-    // Título "CONVERSOR DE MOEDAS"
+
+    // estilos existentes (mantidos / levemente ajustados)
     titulo: {
         color: "#FFFFFF",
         fontSize: 24,
         fontWeight: "bold",
         textTransform: "uppercase",
-        marginBottom: 40,
+        marginBottom: 24,
         textAlign: "center",
     },
-    // Container do campo de input BRL
+
     inputContainer: {
         width: "100%",
-        marginBottom: 30,
+        marginBottom: 20,
     },
-    // Label do input BRL
     inputLabel: {
         color: "#FFFFFF",
         fontSize: 14,
         marginBottom: 8,
     },
-    // Input field
     escrito: {
-        borderBottomWidth: 1,
-        borderBottomColor: "#FFFFFF",
+        backgroundColor: "rgba(255,255,255,0.02)",
+        borderRadius: 10,
+        paddingVertical: 12,
+        paddingHorizontal: 12,
         color: "#FFFFFF",
         fontSize: 16,
-        paddingVertical: 10,
-        paddingHorizontal: 5,
+        borderWidth: 1,
+        borderColor: "rgba(255,255,255,0.06)",
     },
-    // Container do indicador de conversão (setas)
+
     conversorIndicator: {
         alignItems: "center",
-        marginVertical: 20,
+        marginVertical: 18,
     },
-    // Container do dropdown
+
     dropdownContainer: {
         width: "100%",
-        marginBottom: 30,
+        marginBottom: 18,
     },
-    // Label do dropdown
     dropdownLabel: {
         color: "#FFFFFF",
         fontSize: 14,
         marginBottom: 8,
     },
-    // Botão de converter
+
     botao: {
-        backgroundColor: "#9C27B0", // Roxo vibrante
+        backgroundColor: "#9C27B0",
         borderRadius: 25,
-        paddingVertical: 15,
-        paddingHorizontal: 40,
+        paddingVertical: 14,
+        paddingHorizontal: 24,
         width: "100%",
         alignItems: "center",
-        marginTop: 20,
+        marginTop: 10,
+        shadowColor: "#9C27B0",
+        shadowOffset: { width: 0, height: 6 },
+        shadowOpacity: 0.18,
+        shadowRadius: 10,
+        elevation: 5,
     },
-    // Texto do botão
     botaoTexto: {
         color: "#FFFFFF",
         fontSize: 16,
         fontWeight: "bold",
         textTransform: "uppercase",
     },
-    // Container de resultado
+
     resultadoContainer: {
-        marginTop: 30,
+        marginTop: 22,
         width: "100%",
         alignItems: "center",
     },
-    // Texto do resultado
     resultadoTexto: {
         color: "#FFFFFF",
         fontSize: 18,
-        fontWeight: "bold",
+        fontWeight: "700",
     },
-    // Texto de erro
+
     erroTexto: {
         color: "#F44336",
         fontSize: 14,
         marginTop: 10,
         textAlign: "center",
     },
-    // Estilos antigos mantidos para compatibilidade
+
+    // estilos antigos mantidos
     caixa: {
         height: 150,
         width: 500,
@@ -119,9 +123,9 @@ export default StyleSheet.create({
         backgroundColor: 'blue'
     },
     escrita: {
-        borderWidth: 1, 
-        padding: 10, 
-        marginBottom: 12, 
+        borderWidth: 1,
+        padding: 10,
+        marginBottom: 12,
         borderRadius: 6,
     },
-})
+});
