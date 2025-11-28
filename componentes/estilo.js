@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    // estilo da view principal 
     view: {
         flex: 1,
         backgroundColor: "#010011", 
@@ -10,14 +9,12 @@ export default StyleSheet.create({
         alignItems: "center",
     },
     
-    // estilo da logo
     logoImage: {
         width: 180,
         height: 190,
         resizeMode: "contain",
     },
 
-    // container principal (card roxo-escuro)
     containerPrincipal: {
         backgroundColor: "#23123dff",
         width: "70%",
@@ -27,7 +24,6 @@ export default StyleSheet.create({
         paddingTop: 30,
     },
 
-    // estilos existentes (mantidos / levemente ajustados)
     titulo: {
         color: "#FFFFFF",
         fontSize: 24,
@@ -111,7 +107,6 @@ export default StyleSheet.create({
         textAlign: "center",
     },
 
-    // estilos antigos mantidos
     caixa: {
         height: 150,
         width: 500,
